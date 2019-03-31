@@ -1,5 +1,7 @@
 
-
+  .w3-animate-bottom {
+    animation: animatebottom 1.5s;
+  }
   HR{
     width: 90%;
     border: 0;
