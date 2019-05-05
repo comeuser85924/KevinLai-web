@@ -43,11 +43,7 @@ $(function () {
     cleanbar(back_bar, '.bar-back');
   }
   window.OtherClick = OtherClick;
-  
-  function Menuskill(){
-    $('.myskill').removeClass("hide");
-  }
-  window.Menuskill = Menuskill;
+
   function addbar(bars, classname) {
     bars = [].slice.call(document.querySelectorAll(classname));
     bars.map(function (bar, index) {
@@ -74,7 +70,7 @@ $(function () {
       $('.myExperience').addClass(".w3-container w3-animate-bottom");
     }
     if (scrollVal >= 1400) {
-      $('.myskill').removeClass("hide");
+      $('.myskill').removeClass("visibility");
       $('.myskill').addClass(".w3-container w3-animate-bottom");
     }
   });
