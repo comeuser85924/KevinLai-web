@@ -44,6 +44,10 @@ $(function () {
   }
   window.OtherClick = OtherClick;
   
+  function Menuskill(){
+    $('.myskill').removeClass("hide");
+  }
+  window.Menuskill = Menuskill;
   function addbar(bars, classname) {
     bars = [].slice.call(document.querySelectorAll(classname));
     bars.map(function (bar, index) {
@@ -61,15 +65,16 @@ $(function () {
     });
   }
 })
+
 $(function () {
   // 飛入
   $(window).scroll(function () {
     var scrollVal = $(this).scrollTop();
-    if (scrollVal >= 750) {
+    if (scrollVal >= 1000) {
       $('.myExperience').addClass(".w3-container w3-animate-bottom");
-      $('.myskill').removeClass("hide");
     }
     if (scrollVal >= 1400) {
+      $('.myskill').removeClass("hide");
       $('.myskill').addClass(".w3-container w3-animate-bottom");
     }
   });
