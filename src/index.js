@@ -6,13 +6,6 @@ $(function () {
   var back_bar;
   var other_bar;
   addbar(front_bar, '.bar-front');
-  function ToAbout() {
-    $('html,body').animate({
-      scrollTop: $('#myData').offset().top
-    }, 800);
-    return false;
-  }
-  window.ToAbout = ToAbout;
  
   function FrontClick() {
     $('.front-end').removeClass('visibility');

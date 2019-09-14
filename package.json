@@ -7,7 +7,7 @@
     "build": "webpack",
     "watch": "webpack --mode development --watch",
     "start": "webpack --mode development",
-    "deploy": "npxwebpack --mode production",
+    "deploy": "webpack --mode production",
     "open": "webpack-dev-server --open"
   },
   "repository": {
