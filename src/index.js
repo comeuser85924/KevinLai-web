@@ -38,6 +38,7 @@ $(function () {
   window.OtherClick = OtherClick;
 
   function addbar(bars, classname) {
+  
     bars = [].slice.call(document.querySelectorAll(classname));
     bars.map(function (bar, index) {
       setTimeout(function () {
