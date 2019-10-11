@@ -6,10 +6,3 @@ Vue.use(VueFbCustomerChat, {
   theme_color: '#6699cc', // theme color in HEX
   locale: 'en_US', // default 'en_US'
 })
-
-Vue.use(vue_fb, {
-    appId: '113720326704164',
-    autoLogAppEvents: true,
-    xfbml: true,
-    version: 'v4.0'
-})
