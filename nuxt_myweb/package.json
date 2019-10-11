@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "vue-fb-customer-chat": "^0.1.5"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

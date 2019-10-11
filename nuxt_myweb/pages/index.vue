@@ -8,17 +8,18 @@
     <hr />
     <myskill></myskill>
     <callme></callme>
+    
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div> -->
     <!-- Your customer chat code -->
-    <div
+    <!-- <div
       class="fb-customerchat"
       attribution="setup_tool"
       page_id="113720326704164"
       theme_color="#6699cc"
       logged_in_greeting="你好，有需要什麼幫助的嗎?"
       logged_out_greeting="你好，有需要什麼幫助的嗎?"
-    ></div>
+    ></div> -->
   </div>
 </template>
 
@@ -32,6 +33,9 @@ import myskill from "~/components/myskill.vue";
 import callme from "~/components/callme.vue";
 
 export default {
+  data: function () {
+        return {isFBReady: false}
+    },
   mounted() {
     $(window).scroll(function() {
       var scrollVal = $(this).scrollTop();
@@ -43,22 +47,22 @@ export default {
         $(".myskill").addClass(".w3-container w3-animate-bottom");
       }
     });
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml: true,
-        version: "v4.0"
-      });
-    };
+    // window.fbAsyncInit = function() {
+    //   FB.init({
+    //     xfbml: true,
+    //     version: "v4.0"
+    //   });
+    // };
 
-    (function(d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
+    // (function(d, s, id) {
+    //   var js,
+    //     fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) return;
+    //   js = d.createElement(s);
+    //   js.id = id;
+    //   js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
+    //   fjs.parentNode.insertBefore(js, fjs);
+    // })(document, "script", "facebook-jssdk");
     // 導覽列 點擊 錨點
     // $("a[href*=#]:not([href=#])").click(function() {
     //   var target = $(this.hash);

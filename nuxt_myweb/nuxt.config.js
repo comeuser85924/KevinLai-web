@@ -1,14 +1,12 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  
-} : {}
+
 export default {
   mode: 'spa',
   /*
   ** Headers of the page
   */
-  router: {
-    base: '/<comeuser85924>/'
-  },
+  // router: {
+  //   base: '/<comeuser85924>/'
+  // },
   head: {
     title: 'Kevin的網站',
     meta: [
@@ -48,6 +46,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-fb-customer-chat.js', ssr: false }
     // {
     //   src: '~/plugins/main_index.js',
     // },
