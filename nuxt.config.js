@@ -1,6 +1,9 @@
 
 export default {
   mode: 'spa',
+  router: {
+    base: '/comeuser85924.github.io/'
+  },
   /*
   ** Headers of the page
   */
