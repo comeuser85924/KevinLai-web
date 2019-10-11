@@ -8,9 +8,9 @@
     <hr />
     <myskill></myskill>
     <callme></callme>
-    
+
     <!-- Load Facebook SDK for JavaScript -->
-    <!-- <div id="fb-root"></div> -->
+    <div id="fb-root"></div>
     <!-- Your customer chat code -->
     <!-- <div
       class="fb-customerchat"
